@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ATGráfica</title>
+  <style>
+    :root {
+      --cor-primaria: #0c2d48; /* azul escuro */
+      --cor-secundaria: #e2741d; /* laranja */
+      --cor-fundo: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--cor-fundo);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--cor-primaria);
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 220px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: var(--cor-secundaria);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: blue;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: url('https://via.placeholder.com/1200x400?text=ATGráfica+-+Marketing+e+Publicidade') no-repeat center center/cover;
+      height: 400px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .servicos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .servico {
+      flex: 1 1 280px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: var(--cor-secundaria);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--cor-primaria);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logotipo.jpg" alt="" />
+    <h1>ATGráfica</h1>
+    <p>Marketing, Comunicação & Imagem</p>
+    <p><strong>Tel:</strong> 944 064 924</p>
+  </header>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#video">Vídeo</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="banner"></div>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="servico">
+        <h3>Criação de Identidade Visual</h3>
+        <p>Design de logotipo, cartões, papelaria e marca completa.</p>
+      </div>
+      <div class="servico">
+        <h3>Publicidade Impressa</h3>
+        <p>Panfletos, cartazes, banners, lonas, faixas e muito mais.</p>
+      </div>
+      <div class="servico">
+        <h3>Marketing Digital</h3>
+        <p>Campanhas online, redes sociais e branding digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a ATGráfica</h2>
+    <p>Somos uma gráfica moderna e criativa, especializada em marketing, comunicação visual e soluções gráficas para empresas e profissionais. Unimos tecnologia e design para destacar sua marca.</p>
+  </section>
+
+  <section id="video">
+    <h2>Apresentação</h2>
+  <video width="100%" height="auto" controls autoplay muted>
+    <source src="APRESENTACAO_ATGRAFICA_COLORIDA.mp4" type="video/mp4">
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ATGráfica – Todos os direitos reservados</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/244944064924" target="_blank" title="Fale no WhatsApp">💬</a>
+
+</body>
+</html>
